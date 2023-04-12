@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20大</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <a href="#" class="btn select">首页</a>
+            <a href="idea.html" class="btn">爱国理念</a>
+            <a href="study.html" class="btn">学习活动</a>
+            <a href="videos.html" class="btn">视频欣赏</a>
+        </div>
+    </header>
+
+    <main style="position: relative; height: calc(100% - 140px);">
+        <div style="overflow: hidden; perspective: 1200px; height: 100%; width: calc(100% - 160px); transform: translateX(160px);">
+            <div class="row" style="position: absolute; width: calc(100% * 1.5); height: 200px; top: 50%; background-color: var(--content-color); transform: rotate3d(0, -1, 0, 45deg) translate(0, -50%); transform-origin: center left;">
+                <div style="align-self: center; width: 100%;">
+                    <div class="row" style="background-color: var(--primary-color); width: 100%; height: 80px; border: solid 6px var(--bgc);">
+                        <div style="margin-left: 50%; letter-spacing: 6px; font-weight: bold; font-size: 32px; color: var(--bgc);">为人民服务</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; left: 16px; top: 50%; transform: translateY(calc(-50% + 4px)); width: 240px; height: 240px; background-color: var(--primary-color); border-radius: 50%; border: solid 8px var(--bgc);" ></div>
+        <img style="position: absolute; left: 80px; top: 50%; transform: translateY(-50%); " src="img/cpc.png" alt="cpc" width="120">
+    </main>
+</body>
+</html>
