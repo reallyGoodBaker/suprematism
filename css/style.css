@@ -13,9 +13,11 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     color: #fff;
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 120px auto;
     width: 1000px;
     color: var(--content-color);
 }
@@ -104,9 +106,37 @@ a:focus {
 }
 
 p {
+    margin: 40px 0;
+    position: relative;
     font-size: large;
     opacity: 0.9;
-    /* text-indent: 2em; */
+}
+
+p.style1::after {
+    --color: var(--primary-color);
+    content: '';
+    position: absolute;
+    background-color: var(--color);
+    bottom: -32px;
+    left: 0;
+    height: 8px;
+    width: 200px;
+}
+
+p.style2 {
+    padding: 20px;
+    background-color: var(--content-color);
+    color: var(--bgc);
+}
+p.style2::after {
+    --color: var(--primary-color);
+    content: '';
+    position: absolute;
+    background-color: var(--color);
+    bottom: -8px;
+    right: 0;
+    height: 8px;
+    width: 300px;
 }
 
 .block {
@@ -119,4 +149,8 @@ p {
 .block.light {
     background-color: var(--bgc);
     color: var(--content-color);
+}
+
+.video {
+    margin: 40px 0;
 }
